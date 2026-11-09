@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="ChemTutor AI – trợ lý học tập về thuyết acid–base Brønsted–Lowry.">
+  <title>ChemTutor AI — Gia sư Hóa học</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="/">
+      <span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M12 4h8M14 4v9L7 25a2 2 0 0 0 1.7 3h14.6a2 2 0 0 0 1.7-3l-7-12V4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 22h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="14" cy="19" r="1" fill="currentColor"/><circle cx="19" cy="24" r="1" fill="currentColor"/></svg></span>
+      <span><b>ChemTutor</b><small>AI LEARNING LAB</small></span>
+    </a>
+    <button class="new-chat" id="newChat"><span>＋</span> Cuộc trò chuyện mới</button>
+    <div class="side-label">KHÔNG GIAN HỌC TẬP</div>
+    <div class="nav-item active"><span>◈</span> Gia sư Acid – Base</div>
+    <div class="nav-item muted"><span>▤</span> Kiến thức nền tảng</div>
+    <div class="side-card">
+      <div class="side-card-icon">✦</div>
+      <b>Học bằng tư duy</b>
+      <p>ChemTutor đặt câu hỏi gợi mở để bạn tự khám phá kiến thức.</p>
+    </div>
+    <div class="sidebar-bottom"><span class="status-dot"></span> Trợ lý AI sẵn sàng</div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="mobile-brand"><span class="brand-mark small">✧</span><b>ChemTutor AI</b></div>
+      <div class="breadcrumb">Không gian học tập <span>/</span> <b>Acid – Base</b></div>
+      <div class="top-right"><span class="model-pill"><i></i> Gemini AI</span></div>
+    </header>
+
+    <section class="chat-area" id="chatArea">
+      <div class="welcome" id="welcome">
+        <div class="welcome-orb"><span>✧</span><i></i></div>
+        <div class="eyebrow">YOUR PERSONAL CHEMISTRY TUTOR</div>
+        <h1>Khám phá Hóa học<br><em>bằng tư duy của bạn.</em></h1>
+        <p class="welcome-copy">Xin chào! Mình là ChemTutor AI. Hãy cùng tìm hiểu thuyết<br class="desktop-only"> acid–base Brønsted–Lowry nhé.</p>
+        <div class="suggestion-grid">
+          <button class="suggestion" data-prompt="Theo Brønsted–Lowry, acid và base được định nghĩa như thế nào?"><span class="suggestion-icon violet">◈</span><span><b>Kiến thức nền tảng</b><small>Acid và base là gì?</small></span><span class="arrow">↗</span></button>
+          <button class="suggestion" data-prompt="Vì sao NH3 là base theo thuyết Brønsted–Lowry?"><span class="suggestion-icon blue">⌁</span><span><b>Phân tích phản ứng</b><small>Vai trò của NH₃ trong nước</small></span><span class="arrow">↗</span></button>
+          <button class="suggestion" data-prompt="HCO3− là acid hay base? Hãy giúp em phân tích."><span class="suggestion-icon orange">⇄</span><span><b>Chất lưỡng tính</b><small>Phân tích ion HCO₃⁻</small></span><span class="arrow">↗</span></button>
+          <button class="suggestion" data-prompt="Hãy cho em một bài tập xác định các cặp acid–base liên hợp và hướng dẫn bằng câu hỏi gợi mở."><span class="suggestion-icon green">✎</span><span><b>Luyện tập tư duy</b><small>Nhận diện cặp liên hợp</small></span><span class="arrow">↗</span></button>
+        </div>
+      </div>
+      <div class="messages" id="messages" aria-live="polite"></div>
+    </section>
+
+    <footer class="composer-wrap">
+      <div class="composer">
+        <textarea id="prompt" rows="1" placeholder="Đặt câu hỏi về acid – base..." aria-label="Nhập câu hỏi"></textarea>
+        <div class="composer-bottom">
+          <span class="hint"><span>✦</span> Học từng bước · Hiểu bản chất</span>
+          <button id="sendBtn" class="send-btn" aria-label="Gửi câu hỏi"><svg viewBox="0 0 24 24"><path d="M5 12 19 5l-7 14-1.5-5.5L5 12Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+      <p class="disclaimer">ChemTutor AI có thể mắc lỗi. Hãy đối chiếu kiến thức với giáo trình và hướng dẫn của giáo viên.</p>
+    </footer>
+  </main>
+</div>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
