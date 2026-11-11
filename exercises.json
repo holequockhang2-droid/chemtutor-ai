@@ -1,0 +1,55 @@
+
+{
+  "acid_base": [
+    {
+      "id": "AB01",
+      "topic": "Acid và base Brønsted–Lowry",
+      "level": "Cơ bản",
+      "question": "Trong phản ứng NH3 + H2O ⇌ NH4+ + OH-, hãy xác định acid, base và các cặp acid–base liên hợp."
+    },
+    {
+      "id": "AB02",
+      "topic": "Chất lưỡng tính",
+      "level": "Cơ bản",
+      "question": "Viết hai phương trình phản ứng chứng minh HCO3- là chất lưỡng tính theo Brønsted–Lowry."
+    },
+    {
+      "id": "AB03",
+      "topic": "Tính pH acid yếu",
+      "level": "Vận dụng",
+      "question": "Tính pH dung dịch CH3COOH 0,1 M, biết Ka = 1,8 × 10⁻⁵ ở 25°C."
+    },
+    {
+      "id": "AB04",
+      "topic": "So sánh tính acid",
+      "level": "Vận dụng",
+      "question": "So sánh khả năng nhường proton của HA và HB, biết Ka(HA) = 10⁻⁵ và Ka(HB) = 10⁻³."
+    }
+  ],
+  "equilibrium": [
+    {
+      "id": "CB01",
+      "topic": "Hằng số cân bằng",
+      "level": "Cơ bản",
+      "question": "Viết biểu thức Kc cho phản ứng N2(g) + 3H2(g) ⇌ 2NH3(g)."
+    },
+    {
+      "id": "CB02",
+      "topic": "Tính hằng số cân bằng",
+      "level": "Vận dụng",
+      "question": "Cho phản ứng H2(g) + I2(g) ⇌ 2HI(g). Tại cân bằng, [H2] = 0,2 M, [I2] = 0,2 M và [HI] = 0,8 M. Tính Kc."
+    },
+    {
+      "id": "CB03",
+      "topic": "Nguyên lý Le Chatelier",
+      "level": "Vận dụng",
+      "question": "Xét cân bằng 2SO2(g) + O2(g) ⇌ 2SO3(g), phản ứng thuận tỏa nhiệt. Dự đoán chiều chuyển dịch cân bằng khi tăng nhiệt độ, tăng áp suất và tăng nồng độ O2."
+    },
+    {
+      "id": "CB04",
+      "topic": "Tính nồng độ cân bằng",
+      "level": "Nâng cao",
+      "question": "Trong bình kín 1 L, ban đầu có 1 mol H2 và 1 mol I2. Xét phản ứng H2(g) + I2(g) ⇌ 2HI(g), biết Kc = 4. Tính nồng độ các chất tại cân bằng."
+    }
+  ]
+}
