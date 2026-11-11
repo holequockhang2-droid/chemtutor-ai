@@ -324,9 +324,43 @@
     min-height: 100vh;
   }
 
-  .sidebar {
+ 
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+    gap: 8px;
+    padding: 10px 12px;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+}
+
+.brand,
+.new-chat,
+.side-label,
+.side-card,
+.sidebar-bottom {
     display: none;
-  }
+}
+
+.nav-item {
+    display: flex;
+    flex: 1;
+    width: 0;
+    min-width: 0;
+    height: 42px;
+    justify-content: center;
+    margin-top: 0;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.nav-item.muted {
+    margin-top: 0;
+}
+
 
   .main {
     display: flex;
