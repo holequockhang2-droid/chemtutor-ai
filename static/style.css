@@ -305,3 +305,83 @@
     margin-top: 0;
   }
 }
+
+/* FIX RESPONSIVE MOBILE */
+@media screen and (max-width: 760px) {
+  html,
+  body {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .app-shell {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .topbar,
+  .chat-area,
+  .composer-wrap {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .chat-area {
+    flex: 1 1 auto;
+    padding: 24px 16px 12px;
+  }
+
+  .welcome,
+  .messages,
+  .suggestion-grid {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .welcome h1 {
+    font-size: clamp(26px, 7vw, 32px);
+    overflow-wrap: break-word;
+  }
+
+  .welcome-copy,
+  .suggestion b,
+  .suggestion small,
+  .bubble {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .suggestion-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .composer-wrap {
+    padding: 10px 12px 14px;
+  }
+
+  .composer,
+  .composer textarea {
+    width: 100%;
+    min-width: 0;
+  }
+}
