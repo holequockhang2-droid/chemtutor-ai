@@ -272,3 +272,36 @@
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 760px) {
+  .sidebar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .brand,
+  .new-chat,
+  .side-label,
+  .side-card,
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .nav-item {
+    display: flex;
+    flex: 1;
+    width: auto;
+    justify-content: center;
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  .nav-item.muted {
+    margin-top: 0;
+  }
+}
